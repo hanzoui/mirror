@@ -1,10 +1,8 @@
 var __defProp = Object.defineProperty;
 var __name = (target, value) => __defProp(target, "name", { value, configurable: true });
-import { d as defineComponent, c as computed, o as openBlock, f as createElementBlock, F as Fragment, E as renderList, N as createVNode, M as withCtx, aE as createTextVNode, X as toDisplayString, j as unref, aI as script, I as createCommentVNode, ab as ref, cn as FilterMatchMode, a$ as useKeybindingStore, a2 as useCommandStore, a1 as useI18n, af as normalizeI18nKey, w as watchEffect, bs as useToast, r as resolveDirective, k as createBlock, co as SearchBox, H as createBaseVNode, l as script$2, av as script$4, bM as withModifiers, bZ as script$5, aP as script$6, i as withDirectives, cp as _sfc_main$2, aL as pushScopeId, aM as popScopeId, cq as KeyComboImpl, cr as KeybindingImpl, _ as _export_sfc } from "./index-BbhVsmQe.js";
-import { s as script$1, a as script$3 } from "./index-DIIs-Ju9.js";
-import { u as useKeybindingService } from "./keybindingService-DohhteGb.js";
-import "./index-BQjD3NM4.js";
-import "./index-VIBj2YvH.js";
+import { a as defineComponent, p as computed, o as openBlock, f as createElementBlock, O as Fragment, P as renderList, g as createVNode, x as withCtx, ax as createTextVNode, a7 as toDisplayString, y as unref, aB as script, h as createCommentVNode, r as ref, cl as FilterMatchMode, N as useKeybindingStore, D as useCommandStore, H as useI18n, aR as normalizeI18nKey, aM as watchEffect, bp as useToast, q as resolveDirective, v as createBlock, cm as SearchBox, z as createBaseVNode, C as script$2, ap as script$4, bu as withModifiers, b_ as script$5, aI as script$6, t as withDirectives, cn as _sfc_main$2, Q as pushScopeId, R as popScopeId, bU as KeyComboImpl, co as KeybindingImpl, _ as _export_sfc } from "./index-DAOHvvrm.js";
+import { s as script$1, a as script$3 } from "./index-DqWMa5Pc.js";
+import "./index-CPVMarQJ.js";
 const _hoisted_1$1 = {
   key: 0,
   class: "px-2"
@@ -37,7 +35,7 @@ const _sfc_main$1 = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const _withScopeId = /* @__PURE__ */ __name((n) => (pushScopeId("data-v-2554ab36"), n = n(), popScopeId(), n), "_withScopeId");
+const _withScopeId = /* @__PURE__ */ __name((n) => (pushScopeId("data-v-108bdfe7"), n = n(), popScopeId(), n), "_withScopeId");
 const _hoisted_1 = { class: "actions invisible flex flex-row" };
 const _hoisted_2 = ["title"];
 const _hoisted_3 = { key: 1 };
@@ -48,7 +46,6 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       global: { value: "", matchMode: FilterMatchMode.CONTAINS }
     });
     const keybindingStore = useKeybindingStore();
-    const keybindingService = useKeybindingService();
     const commandStore = useCommandStore();
     const { t } = useI18n();
     const commandsData = computed(() => {
@@ -93,7 +90,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     function removeKeybinding(commandData) {
       if (commandData.keybinding) {
         keybindingStore.unsetKeybinding(commandData.keybinding);
-        keybindingService.persistUserKeybindings();
+        keybindingStore.persistUserKeybindings();
       }
     }
     __name(removeKeybinding, "removeKeybinding");
@@ -117,7 +114,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           })
         );
         if (updated) {
-          keybindingService.persistUserKeybindings();
+          keybindingStore.persistUserKeybindings();
         }
       }
       cancelEdit();
@@ -126,7 +123,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const toast = useToast();
     async function resetKeybindings() {
       keybindingStore.resetKeybindings();
-      await keybindingService.persistUserKeybindings();
+      await keybindingStore.persistUserKeybindings();
       toast.add({
         severity: "info",
         summary: "Info",
@@ -277,8 +274,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     };
   }
 });
-const KeybindingPanel = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-2554ab36"]]);
+const KeybindingPanel = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-108bdfe7"]]);
 export {
   KeybindingPanel as default
 };
-//# sourceMappingURL=KeybindingPanel-COhe3VgH.js.map
+//# sourceMappingURL=KeybindingPanel-BkAdqLwN.js.map

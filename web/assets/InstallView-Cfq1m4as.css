@@ -74,6 +74,9 @@ div.selected {
   text-align: center;
 }
 
-[data-v-de33872d] .p-steppanel {
-    background-color: transparent
+[data-v-eeee4af8] .p-steppanel {
+  background-color: transparent;
+}
+.stepper[data-v-eeee4af8] {
+  margin-top: max(1rem, max(0px, calc((100vh - 42rem) * 0.5)));
 }
