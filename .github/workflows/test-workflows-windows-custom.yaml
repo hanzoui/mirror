@@ -1,4 +1,4 @@
-name: Use Custom Runner Target To Test ComfyUI Windows with Default Workflow
+name: Use Custom Runner Target To Test Hanzo Studio Windows with Default Workflow
 on:
   workflow_dispatch:
     inputs:
@@ -11,7 +11,7 @@ jobs:
   test-action:
     runs-on: ${{ inputs.runs_on }}
     steps:
-    - name: Use ComfyUI GitHub Action
+    - name: Use Hanzo Studio GitHub Action
       uses: comfy-org/comfy-action@monkeytest
       with:
         os: windows
@@ -19,6 +19,6 @@ jobs:
         workflow_filenames: 'default.json'
         gcs_bucket_name: 'comfy-ci-results'
         google_credentials: ${{ secrets.GCS_SERVICE_ACCOUNT_JSON }}
-        output_prefix: 'ComfyUI'
+        output_prefix: 'Hanzo Studio'
         timeout: 50
         # api_endpoint: http://localhost:8080/upload-artifact

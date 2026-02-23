@@ -16,7 +16,7 @@ jobs:
       pull-requests: write
 
     steps:
-      - name: Checkout ComfyUI
+      - name: Checkout Hanzo Studio
         uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
@@ -27,21 +27,21 @@ jobs:
           pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt
           pip install wait-for-it
-      # Frontend asset will be downloaded to ComfyUI/web_custom_versions/Comfy-Org_ComfyUI_frontend/{version}
-      - name: Start ComfyUI server
+      # Frontend asset will be downloaded to Hanzo Studio/web_custom_versions/hanzoui_Hanzo Studio_frontend/{version}
+      - name: Start Hanzo Studio server
         run: |
-          python main.py --cpu --front-end-version Comfy-Org/ComfyUI_frontend@${{ github.event.inputs.version }} 2>&1 | tee console_output.log &
+          python main.py --cpu --front-end-version hanzoui/studio_frontend@${{ github.event.inputs.version }} 2>&1 | tee console_output.log &
           wait-for-it --service 127.0.0.1:8188 -t 10
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
       # Replace existing frontend content with the new version and remove .js.map files
-      # See https://github.com/Comfy-Org/ComfyUI_frontend/issues/2145 for why we remove .js.map files
+      # See https://github.com/hanzoui/studio_frontend/issues/2145 for why we remove .js.map files
       - name: Update frontend content
         run: |
           rm -rf web/
-          cp -r web_custom_versions/Comfy-Org_ComfyUI_frontend/${{ github.event.inputs.version }} web/
+          cp -r web_custom_versions/hanzoui_Hanzo Studio_frontend/${{ github.event.inputs.version }} web/
           rm web/**/*.js.map
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7

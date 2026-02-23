@@ -27,7 +27,7 @@ from comfy.cli_args import args
 import comfy.utils
 import comfy.model_management
 import node_helpers
-from comfyui_version import __version__
+from hanzo_studio_version import __version__
 from app.frontend_management import FrontendManager
 from app.user_manager import UserManager
 from app.model_manager import ModelFileManager
@@ -528,7 +528,7 @@ class PromptServer():
                     "os": os.name,
                     "ram_total": ram_total,
                     "ram_free": ram_free,
-                    "comfyui_version": __version__,
+                    "hanzo_studio_version": __version__,
                     "python_version": sys.version,
                     "pytorch_version": comfy.model_management.torch_version,
                     "embedded_python": os.path.split(os.path.split(sys.executable)[0])[1] == "python_embeded",

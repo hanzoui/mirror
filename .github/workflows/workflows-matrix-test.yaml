@@ -45,8 +45,8 @@ jobs:
           python_version: ${{ matrix.python_version }}
           torch_version: ${{ matrix.torch_version }}
           google_credentials: ${{ secrets.GCS_SERVICE_ACCOUNT_JSON }}
-          comfyui_flags: ${{ matrix.flags }}
-          output_prefix: 'ComfyUI'
+          hanzo_studio_flags: ${{ matrix.flags }}
+          output_prefix: 'Hanzo Studio'
           timeout: 50
           use_prior_commit: 'true'
   test-win-nightly:
@@ -70,8 +70,8 @@ jobs:
           python_version: ${{ matrix.python_version }}
           torch_version: ${{ matrix.torch_version }}
           google_credentials: ${{ secrets.GCS_SERVICE_ACCOUNT_JSON }}
-          comfyui_flags: ${{ matrix.flags }}
-          output_prefix: 'ComfyUI'
+          hanzo_studio_flags: ${{ matrix.flags }}
+          output_prefix: 'Hanzo Studio'
           timeout: 50
           use_prior_commit: 'true'
   test-unix-nightly:
@@ -99,7 +99,7 @@ jobs:
           python_version: ${{ matrix.python_version }}
           torch_version: ${{ matrix.torch_version }}
           google_credentials: ${{ secrets.GCS_SERVICE_ACCOUNT_JSON }}
-          comfyui_flags: ${{ matrix.flags }}
-          output_prefix: 'ComfyUI'
+          hanzo_studio_flags: ${{ matrix.flags }}
+          output_prefix: 'Hanzo Studio'
           timeout: 50
           use_prior_commit: 'true'

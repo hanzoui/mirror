@@ -1,2 +1,2 @@
-.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --fast fp16_accumulation
+.\python_embeded\python.exe -s Hanzo Studio\main.py --windows-standalone-build --fast fp16_accumulation
 pause
