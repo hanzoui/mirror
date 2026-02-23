@@ -77,7 +77,7 @@ class LoraSave:
 
     @classmethod
     def INPUT_TYPES(s):
-        return {"required": {"filename_prefix": ("STRING", {"default": "loras/Hanzo Studio_extracted_lora"}),
+        return {"required": {"filename_prefix": ("STRING", {"default": "loras/HanzoStudio_extracted_lora"}),
                               "rank": ("INT", {"default": 8, "min": 1, "max": 4096, "step": 1}),
                               "lora_type": (tuple(LORA_TYPES.keys()),),
                               "bias_diff": ("BOOLEAN", {"default": True}),
