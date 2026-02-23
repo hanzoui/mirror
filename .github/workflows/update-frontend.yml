@@ -38,14 +38,14 @@ jobs:
       # Frontend asset will be downloaded to HanzoStudio/web_custom_versions/hanzoui_HanzoStudio_frontend/{version}
       - name: Start Hanzo Studio server
         run: |
-          python main.py --cpu --front-end-version hanzoui/studio_frontend@${{ github.event.inputs.version }} 2>&1 | tee console_output.log &
+          python main.py --cpu --front-end-version hanzoui/frontend@${{ github.event.inputs.version }} 2>&1 | tee console_output.log &
           wait-for-it --service 127.0.0.1:8188 -t 10
       - name: Configure Git
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
       # Replace existing frontend content with the new version and remove .js.map files
-      # See https://github.com/hanzoui/studio_frontend/issues/2145 for why we remove .js.map files
+      # See https://github.com/hanzoui/frontend/issues/2145 for why we remove .js.map files
       - name: Update frontend content
         run: |
           rm -rf web/
