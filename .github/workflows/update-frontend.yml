@@ -35,7 +35,7 @@ jobs:
           pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt
           pip install wait-for-it
-      # Frontend asset will be downloaded to Hanzo Studio/web_custom_versions/hanzoui_HanzoStudio_frontend/{version}
+      # Frontend asset will be downloaded to HanzoStudio/web_custom_versions/hanzoui_HanzoStudio_frontend/{version}
       - name: Start Hanzo Studio server
         run: |
           python main.py --cpu --front-end-version hanzoui/studio_frontend@${{ github.event.inputs.version }} 2>&1 | tee console_output.log &

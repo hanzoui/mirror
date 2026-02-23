@@ -66,7 +66,7 @@ jobs:
           curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
           ./python.exe get-pip.py
           ./python.exe -s -m pip install ../cu${{ inputs.cu }}_python_deps/*
-            sed -i '1i../Hanzo Studio' ./python3${{ inputs.python_minor }}._pth
+            sed -i '1i../HanzoStudio' ./python3${{ inputs.python_minor }}._pth
             cd ..
 
           git clone --depth 1 https://github.com/hanzoai/taesd
@@ -74,13 +74,13 @@ jobs:
 
           mkdir HanzoStudio_windows_portable
           mv python_embeded HanzoStudio_windows_portable
-          mv HanzoStudio_copy HanzoStudio_windows_portable/Hanzo Studio
+          mv HanzoStudio_copy HanzoStudio_windows_portable/HanzoStudio
 
           cd HanzoStudio_windows_portable
 
           mkdir update
-          cp -r Hanzo Studio/.ci/update_windows/* ./update/
-          cp -r Hanzo Studio/.ci/windows_base_files/* ./
+          cp -r HanzoStudio/.ci/update_windows/* ./update/
+          cp -r HanzoStudio/.ci/windows_base_files/* ./
           cp ../update_hanzo_studio_and_python_dependencies.bat ./update/
 
           cd ..
@@ -89,7 +89,7 @@ jobs:
           mv HanzoStudio_windows_portable.7z ${{ github.event.repository.name }}/HanzoStudio_windows_portable_nvidia.7z
 
           cd HanzoStudio_windows_portable
-          python_embeded/python.exe -s Hanzo Studio/main.py --quick-test-for-ci --cpu
+          python_embeded/python.exe -s HanzoStudio/main.py --quick-test-for-ci --cpu
 
           ls
 

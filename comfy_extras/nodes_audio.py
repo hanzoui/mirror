@@ -153,7 +153,7 @@ class SaveAudio:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": { "audio": ("AUDIO", ),
-                              "filename_prefix": ("STRING", {"default": "audio/Hanzo Studio"})},
+                              "filename_prefix": ("STRING", {"default": "audio/HanzoStudio"})},
                 "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"},
                 }
 
