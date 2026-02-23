@@ -589,7 +589,7 @@ class SaveGLB:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": {"mesh": ("MESH", ),
-                             "filename_prefix": ("STRING", {"default": "mesh/Hanzo Studio"}), },
+                             "filename_prefix": ("STRING", {"default": "mesh/HanzoStudio"}), },
                 "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"}, }
 
     RETURN_TYPES = ()
