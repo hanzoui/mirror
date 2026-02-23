@@ -1,3 +1,4 @@
+# Secrets: Hanzo KMS (kms.hanzo.ai) — auth via Hanzo IAM
 name: Update Frontend Release
 
 on:
@@ -16,6 +17,13 @@ jobs:
       pull-requests: write
 
     steps:
+      - name: Fetch secrets from Hanzo KMS
+        id: kms
+        uses: hanzoui/.github/actions/kms-secrets@main
+        with:
+          kms_client_id: ${{ secrets.KMS_CLIENT_ID }}
+          kms_client_secret: ${{ secrets.KMS_CLIENT_SECRET }}
+          secrets: 'PR_BOT_PAT'
       - name: Checkout Hanzo Studio
         uses: actions/checkout@v4
       - uses: actions/setup-python@v4
@@ -46,7 +54,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.PR_BOT_PAT }}
+          token: ${{ steps.kms.outputs.PR_BOT_PAT }}
           commit-message: "Update frontend to v${{ github.event.inputs.version }}"
           title: "Frontend Update: v${{ github.event.inputs.version }}"
           body: |
