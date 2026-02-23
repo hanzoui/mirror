@@ -1,3 +1,4 @@
+# Secrets: Hanzo KMS (kms.hanzo.ai) — auth via Hanzo IAM
 name: Test Hanzo Studio Workflows Manual
 on:
   workflow_dispatch:
@@ -78,8 +79,15 @@ jobs:
   test-default-workflow:
     runs-on: ${{ inputs.runner_label }}
     steps:
+    - name: Fetch secrets from Hanzo KMS
+      id: kms
+      uses: hanzoui/.github/actions/kms-secrets@main
+      with:
+        kms_client_id: ${{ secrets.KMS_CLIENT_ID }}
+        kms_client_secret: ${{ secrets.KMS_CLIENT_SECRET }}
+        secrets: 'GCS_SERVICE_ACCOUNT_JSON'
     - name: Test Default Workflow
-      uses: comfy-org/comfy-action@main
+      uses: hanzoui/action@main
       with:
         os: ${{ inputs.os }}
         python_version: ${{ (contains(inputs.python_version, "other") && inputs.python_version_number != '' ) && inputs.python_version_number || inputs.python_version}}
@@ -87,5 +95,5 @@ jobs:
         torch_version: ${{ (contains(inputs.torch_version, "other") && inputs.torch_version_number != '' ) && inputs.torch_version_number || inputs.torch_version}}
         workflow_filenames: "default.json,lora.json"
         workflow_raw_json: ${{ inputs.workflow_raw_json }}
-        google_credentials: ${{ secrets.GCS_SERVICE_ACCOUNT_JSON }}
+        google_credentials: ${{ steps.kms.outputs.GCS_SERVICE_ACCOUNT_JSON }}
         timeout: 50
