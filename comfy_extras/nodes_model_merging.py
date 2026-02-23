@@ -230,7 +230,7 @@ class CheckpointSave:
         return {"required": { "model": ("MODEL",),
                               "clip": ("CLIP",),
                               "vae": ("VAE",),
-                              "filename_prefix": ("STRING", {"default": "checkpoints/ComfyUI"}),},
+                              "filename_prefix": ("STRING", {"default": "checkpoints/Hanzo Studio"}),},
                 "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"},}
     RETURN_TYPES = ()
     FUNCTION = "save"
@@ -249,7 +249,7 @@ class CLIPSave:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": { "clip": ("CLIP",),
-                              "filename_prefix": ("STRING", {"default": "clip/ComfyUI"}),},
+                              "filename_prefix": ("STRING", {"default": "clip/Hanzo Studio"}),},
                 "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"},}
     RETURN_TYPES = ()
     FUNCTION = "save"
@@ -306,7 +306,7 @@ class VAESave:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": { "vae": ("VAE",),
-                              "filename_prefix": ("STRING", {"default": "vae/ComfyUI_vae"}),},
+                              "filename_prefix": ("STRING", {"default": "vae/Hanzo Studio_vae"}),},
                 "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"},}
     RETURN_TYPES = ()
     FUNCTION = "save"
@@ -340,7 +340,7 @@ class ModelSave:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": { "model": ("MODEL",),
-                              "filename_prefix": ("STRING", {"default": "diffusion_models/ComfyUI"}),},
+                              "filename_prefix": ("STRING", {"default": "diffusion_models/Hanzo Studio"}),},
                 "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"},}
     RETURN_TYPES = ()
     FUNCTION = "save"

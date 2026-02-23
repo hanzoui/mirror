@@ -1,6 +1,6 @@
 <div align="center">
 
-# ComfyUI
+# Hanzo Studio
 **The most powerful and modular visual AI engine and application.**
 
 
@@ -14,28 +14,28 @@
 [![][github-downloads-latest-shield]][github-downloads-link]
 
 [matrix-shield]: https://img.shields.io/badge/Matrix-000000?style=flat&logo=matrix&logoColor=white
-[matrix-url]: https://app.element.io/#/room/%23comfyui_space%3Amatrix.org
+[matrix-url]: https://app.element.io/#/room/%23hanzo_studio_space%3Amatrix.org
 [website-shield]: https://img.shields.io/badge/ComfyOrg-4285F4?style=flat
-[website-url]: https://www.comfy.org/
+[website-url]: https://hanzo.ai/
 <!-- Workaround to display total user from https://github.com/badges/shields/issues/4500#issuecomment-2060079995 -->
 [discord-shield]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscord.com%2Fapi%2Finvites%2Fcomfyorg%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&logo=discord&logoColor=white&label=Discord&color=green&suffix=%20total
-[discord-url]: https://www.comfy.org/discord
+[discord-url]: https://hanzo.ai/discord
 
-[github-release-shield]: https://img.shields.io/github/v/release/comfyanonymous/ComfyUI?style=flat&sort=semver
-[github-release-link]: https://github.com/comfyanonymous/ComfyUI/releases
-[github-release-date-shield]: https://img.shields.io/github/release-date/comfyanonymous/ComfyUI?style=flat
-[github-downloads-shield]: https://img.shields.io/github/downloads/comfyanonymous/ComfyUI/total?style=flat
-[github-downloads-latest-shield]: https://img.shields.io/github/downloads/comfyanonymous/ComfyUI/latest/total?style=flat&label=downloads%40latest
-[github-downloads-link]: https://github.com/comfyanonymous/ComfyUI/releases
+[github-release-shield]: https://img.shields.io/github/v/release/hanzoai/studio?style=flat&sort=semver
+[github-release-link]: https://github.com/hanzoai/studio/releases
+[github-release-date-shield]: https://img.shields.io/github/release-date/hanzoai/studio?style=flat
+[github-downloads-shield]: https://img.shields.io/github/downloads/hanzoai/studio/total?style=flat
+[github-downloads-latest-shield]: https://img.shields.io/github/downloads/hanzoai/studio/latest/total?style=flat&label=downloads%40latest
+[github-downloads-link]: https://github.com/hanzoai/studio/releases
 
-![ComfyUI Screenshot](https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe)
+![Hanzo Studio Screenshot](https://github.com/user-attachments/assets/7ccaf2c1-9b72-41ae-9a89-5688c94b7abe)
 </div>
 
-ComfyUI lets you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. Available on Windows, Linux, and macOS.
+Hanzo Studio lets you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. Available on Windows, Linux, and macOS.
 
 ## Get Started
 
-#### [Desktop Application](https://www.comfy.org/download)
+#### [Desktop Application](https://hanzo.ai/download)
 - The easiest way to get started. 
 - Available on Windows & macOS.
 
@@ -46,58 +46,58 @@ ComfyUI lets you design and execute advanced stable diffusion pipelines using a 
 #### [Manual Install](#manual-install-windows-linux)
 Supports all operating systems and GPU types (NVIDIA, AMD, Intel, Apple Silicon, Ascend).
 
-## [Examples](https://comfyanonymous.github.io/ComfyUI_examples/)
-See what ComfyUI can do with the [example workflows](https://comfyanonymous.github.io/ComfyUI_examples/).
+## [Examples](https://hanzoai.github.io/Hanzo Studio_examples/)
+See what Hanzo Studio can do with the [example workflows](https://hanzoai.github.io/Hanzo Studio_examples/).
 
 
 ## Features
 - Nodes/graph/flowchart interface to experiment and create complex Stable Diffusion workflows without needing to code anything.
 - Image Models
    - SD1.x, SD2.x,
-   - [SDXL](https://comfyanonymous.github.io/ComfyUI_examples/sdxl/), [SDXL Turbo](https://comfyanonymous.github.io/ComfyUI_examples/sdturbo/)
-   - [Stable Cascade](https://comfyanonymous.github.io/ComfyUI_examples/stable_cascade/)
-   - [SD3 and SD3.5](https://comfyanonymous.github.io/ComfyUI_examples/sd3/)
+   - [SDXL](https://hanzoai.github.io/Hanzo Studio_examples/sdxl/), [SDXL Turbo](https://hanzoai.github.io/Hanzo Studio_examples/sdturbo/)
+   - [Stable Cascade](https://hanzoai.github.io/Hanzo Studio_examples/stable_cascade/)
+   - [SD3 and SD3.5](https://hanzoai.github.io/Hanzo Studio_examples/sd3/)
    - Pixart Alpha and Sigma
-   - [AuraFlow](https://comfyanonymous.github.io/ComfyUI_examples/aura_flow/)
-   - [HunyuanDiT](https://comfyanonymous.github.io/ComfyUI_examples/hunyuan_dit/)
-   - [Flux](https://comfyanonymous.github.io/ComfyUI_examples/flux/)
-   - [Lumina Image 2.0](https://comfyanonymous.github.io/ComfyUI_examples/lumina2/)
-   - [HiDream](https://comfyanonymous.github.io/ComfyUI_examples/hidream/)
+   - [AuraFlow](https://hanzoai.github.io/Hanzo Studio_examples/aura_flow/)
+   - [HunyuanDiT](https://hanzoai.github.io/Hanzo Studio_examples/hunyuan_dit/)
+   - [Flux](https://hanzoai.github.io/Hanzo Studio_examples/flux/)
+   - [Lumina Image 2.0](https://hanzoai.github.io/Hanzo Studio_examples/lumina2/)
+   - [HiDream](https://hanzoai.github.io/Hanzo Studio_examples/hidream/)
 - Video Models
-   - [Stable Video Diffusion](https://comfyanonymous.github.io/ComfyUI_examples/video/)
-   - [Mochi](https://comfyanonymous.github.io/ComfyUI_examples/mochi/)
-   - [LTX-Video](https://comfyanonymous.github.io/ComfyUI_examples/ltxv/)
-   - [Hunyuan Video](https://comfyanonymous.github.io/ComfyUI_examples/hunyuan_video/)
-   - [Nvidia Cosmos](https://comfyanonymous.github.io/ComfyUI_examples/cosmos/)
-   - [Wan 2.1](https://comfyanonymous.github.io/ComfyUI_examples/wan/)
+   - [Stable Video Diffusion](https://hanzoai.github.io/Hanzo Studio_examples/video/)
+   - [Mochi](https://hanzoai.github.io/Hanzo Studio_examples/mochi/)
+   - [LTX-Video](https://hanzoai.github.io/Hanzo Studio_examples/ltxv/)
+   - [Hunyuan Video](https://hanzoai.github.io/Hanzo Studio_examples/hunyuan_video/)
+   - [Nvidia Cosmos](https://hanzoai.github.io/Hanzo Studio_examples/cosmos/)
+   - [Wan 2.1](https://hanzoai.github.io/Hanzo Studio_examples/wan/)
 - 3D Models
-   - [Hunyuan3D 2.0](https://docs.comfy.org/tutorials/3d/hunyuan3D-2)
-- [Stable Audio](https://comfyanonymous.github.io/ComfyUI_examples/audio/)
+   - [Hunyuan3D 2.0](https://docs.hanzo.ai/tutorials/3d/hunyuan3D-2)
+- [Stable Audio](https://hanzoai.github.io/Hanzo Studio_examples/audio/)
 - Asynchronous Queue system
 - Many optimizations: Only re-executes the parts of the workflow that changes between executions.
 - Smart memory management: can automatically run models on GPUs with as low as 1GB vram.
 - Works even if you don't have a GPU with: ```--cpu``` (slow)
 - Can load ckpt, safetensors and diffusers models/checkpoints. Standalone VAEs and CLIP models.
 - Embeddings/Textual inversion
-- [Loras (regular, locon and loha)](https://comfyanonymous.github.io/ComfyUI_examples/lora/)
-- [Hypernetworks](https://comfyanonymous.github.io/ComfyUI_examples/hypernetworks/)
+- [Loras (regular, locon and loha)](https://hanzoai.github.io/Hanzo Studio_examples/lora/)
+- [Hypernetworks](https://hanzoai.github.io/Hanzo Studio_examples/hypernetworks/)
 - Loading full workflows (with seeds) from generated PNG, WebP and FLAC files.
 - Saving/Loading workflows as Json files.
-- Nodes interface can be used to create complex workflows like one for [Hires fix](https://comfyanonymous.github.io/ComfyUI_examples/2_pass_txt2img/) or much more advanced ones.
-- [Area Composition](https://comfyanonymous.github.io/ComfyUI_examples/area_composition/)
-- [Inpainting](https://comfyanonymous.github.io/ComfyUI_examples/inpaint/) with both regular and inpainting models.
-- [ControlNet and T2I-Adapter](https://comfyanonymous.github.io/ComfyUI_examples/controlnet/)
-- [Upscale Models (ESRGAN, ESRGAN variants, SwinIR, Swin2SR, etc...)](https://comfyanonymous.github.io/ComfyUI_examples/upscale_models/)
-- [unCLIP Models](https://comfyanonymous.github.io/ComfyUI_examples/unclip/)
-- [GLIGEN](https://comfyanonymous.github.io/ComfyUI_examples/gligen/)
-- [Model Merging](https://comfyanonymous.github.io/ComfyUI_examples/model_merging/)
-- [LCM models and Loras](https://comfyanonymous.github.io/ComfyUI_examples/lcm/)
+- Nodes interface can be used to create complex workflows like one for [Hires fix](https://hanzoai.github.io/Hanzo Studio_examples/2_pass_txt2img/) or much more advanced ones.
+- [Area Composition](https://hanzoai.github.io/Hanzo Studio_examples/area_composition/)
+- [Inpainting](https://hanzoai.github.io/Hanzo Studio_examples/inpaint/) with both regular and inpainting models.
+- [ControlNet and T2I-Adapter](https://hanzoai.github.io/Hanzo Studio_examples/controlnet/)
+- [Upscale Models (ESRGAN, ESRGAN variants, SwinIR, Swin2SR, etc...)](https://hanzoai.github.io/Hanzo Studio_examples/upscale_models/)
+- [unCLIP Models](https://hanzoai.github.io/Hanzo Studio_examples/unclip/)
+- [GLIGEN](https://hanzoai.github.io/Hanzo Studio_examples/gligen/)
+- [Model Merging](https://hanzoai.github.io/Hanzo Studio_examples/model_merging/)
+- [LCM models and Loras](https://hanzoai.github.io/Hanzo Studio_examples/lcm/)
 - Latent previews with [TAESD](#how-to-show-high-quality-previews)
 - Starts up very fast.
 - Works fully offline: will never download anything.
 - [Config file](extra_model_paths.yaml.example) to set the search paths for models.
 
-Workflow examples can be found on the [Examples page](https://comfyanonymous.github.io/ComfyUI_examples/)
+Workflow examples can be found on the [Examples page](https://hanzoai.github.io/Hanzo Studio_examples/)
 
 ## Shortcuts
 
@@ -141,30 +141,30 @@ Workflow examples can be found on the [Examples page](https://comfyanonymous.git
 
 ## Windows Portable
 
-There is a portable standalone build for Windows that should work for running on Nvidia GPUs or for running on your CPU only on the [releases page](https://github.com/comfyanonymous/ComfyUI/releases).
+There is a portable standalone build for Windows that should work for running on Nvidia GPUs or for running on your CPU only on the [releases page](https://github.com/hanzoai/studio/releases).
 
-### [Direct link to download](https://github.com/comfyanonymous/ComfyUI/releases/latest/download/ComfyUI_windows_portable_nvidia.7z)
+### [Direct link to download](https://github.com/hanzoai/studio/releases/latest/download/Hanzo Studio_windows_portable_nvidia.7z)
 
-Simply download, extract with [7-Zip](https://7-zip.org) and run. Make sure you put your Stable Diffusion checkpoints/models (the huge ckpt/safetensors files) in: ComfyUI\models\checkpoints
+Simply download, extract with [7-Zip](https://7-zip.org) and run. Make sure you put your Stable Diffusion checkpoints/models (the huge ckpt/safetensors files) in: Hanzo Studio\models\checkpoints
 
 If you have trouble extracting it, right click the file -> properties -> unblock
 
-If you have a 50 series Blackwell card like a 5090 or 5080 see [this discussion thread](https://github.com/comfyanonymous/ComfyUI/discussions/6643)
+If you have a 50 series Blackwell card like a 5090 or 5080 see [this discussion thread](https://github.com/hanzoai/studio/discussions/6643)
 
-#### How do I share models between another UI and ComfyUI?
+#### How do I share models between another UI and Hanzo Studio?
 
-See the [Config file](extra_model_paths.yaml.example) to set the search paths for models. In the standalone windows build you can find this file in the ComfyUI directory. Rename this file to extra_model_paths.yaml and edit it with your favorite text editor.
+See the [Config file](extra_model_paths.yaml.example) to set the search paths for models. In the standalone windows build you can find this file in the Hanzo Studio directory. Rename this file to extra_model_paths.yaml and edit it with your favorite text editor.
 
 ## Jupyter Notebook
 
-To run it on services like paperspace, kaggle or colab you can use my [Jupyter Notebook](notebooks/comfyui_colab.ipynb)
+To run it on services like paperspace, kaggle or colab you can use my [Jupyter Notebook](notebooks/hanzo_studio_colab.ipynb)
 
 
-## [comfy-cli](https://docs.comfy.org/comfy-cli/getting-started)
+## [hanzo-cli](https://docs.hanzo.ai/hanzo-cli/getting-started)
 
-You can install and start ComfyUI using comfy-cli:
+You can install and start Hanzo Studio using hanzo-cli:
 ```bash
-pip install comfy-cli
+pip install hanzo-cli
 comfy install
 ```
 
@@ -196,7 +196,7 @@ This is the command to install the nightly with ROCm 6.3 which might have some p
 
 ```pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/xpu```
 
-2. Launch ComfyUI by running `python main.py`
+2. Launch Hanzo Studio by running `python main.py`
 
 
 (Option 2) Alternatively, Intel GPUs supported by Intel Extension for PyTorch (IPEX) can leverage IPEX for improved performance.
@@ -210,7 +210,7 @@ pip install torch==2.3.1.post0+cxx11.abi torchvision==0.18.1.post0+cxx11.abi tor
 
 For other supported Intel GPUs with IPEX, visit [Installation](https://intel.github.io/intel-extension-for-pytorch/index.html#installation?platform=gpu) for more information.
 
-Additional discussion and help can be found [here](https://github.com/comfyanonymous/ComfyUI/discussions/476).
+Additional discussion and help can be found [here](https://github.com/hanzoai/studio/discussions/476).
 
 ### NVIDIA
 
@@ -232,28 +232,28 @@ And install it again with the command above.
 
 ### Dependencies
 
-Install the dependencies by opening your terminal inside the ComfyUI folder and:
+Install the dependencies by opening your terminal inside the Hanzo Studio folder and:
 
 ```pip install -r requirements.txt```
 
-After this you should have everything installed and can proceed to running ComfyUI.
+After this you should have everything installed and can proceed to running Hanzo Studio.
 
 ### Others:
 
 #### Apple Mac silicon
 
-You can install ComfyUI in Apple Mac silicon (M1 or M2) with any recent macOS version.
+You can install Hanzo Studio in Apple Mac silicon (M1 or M2) with any recent macOS version.
 
 1. Install pytorch nightly. For instructions, read the [Accelerated PyTorch training on Mac](https://developer.apple.com/metal/pytorch/) Apple Developer guide (make sure to install the latest pytorch nightly).
-1. Follow the [ComfyUI manual installation](#manual-install-windows-linux) instructions for Windows and Linux.
-1. Install the ComfyUI [dependencies](#dependencies). If you have another Stable Diffusion UI [you might be able to reuse the dependencies](#i-already-have-another-ui-for-stable-diffusion-installed-do-i-really-have-to-install-all-of-these-dependencies).
-1. Launch ComfyUI by running `python main.py`
+1. Follow the [Hanzo Studio manual installation](#manual-install-windows-linux) instructions for Windows and Linux.
+1. Install the Hanzo Studio [dependencies](#dependencies). If you have another Stable Diffusion UI [you might be able to reuse the dependencies](#i-already-have-another-ui-for-stable-diffusion-installed-do-i-really-have-to-install-all-of-these-dependencies).
+1. Launch Hanzo Studio by running `python main.py`
 
-> **Note**: Remember to add your models, VAE, LoRAs etc. to the corresponding Comfy folders, as discussed in [ComfyUI manual installation](#manual-install-windows-linux).
+> **Note**: Remember to add your models, VAE, LoRAs etc. to the corresponding Comfy folders, as discussed in [Hanzo Studio manual installation](#manual-install-windows-linux).
 
 #### DirectML (AMD Cards on Windows)
 
-```pip install torch-directml``` Then you can launch ComfyUI with: ```python main.py --directml```
+```pip install torch-directml``` Then you can launch Hanzo Studio with: ```python main.py --directml```
 
 #### Ascend NPUs
 
@@ -262,7 +262,7 @@ For models compatible with Ascend Extension for PyTorch (torch_npu). To get star
 1. Begin by installing the recommended or newer kernel version for Linux as specified in the Installation page of torch-npu, if necessary.
 2. Proceed with the installation of Ascend Basekit, which includes the driver, firmware, and CANN, following the instructions provided for your specific platform.
 3. Next, install the necessary packages for torch-npu by adhering to the platform-specific instructions on the [Installation](https://ascend.github.io/docs/sources/pytorch/install.html#pytorch) page.
-4. Finally, adhere to the [ComfyUI manual installation](#manual-install-windows-linux) guide for Linux. Once all components are installed, you can run ComfyUI as described earlier.
+4. Finally, adhere to the [Hanzo Studio manual installation](#manual-install-windows-linux) guide for Linux. Once all components are installed, you can run Hanzo Studio as described earlier.
 
 #### Cambricon MLUs
 
@@ -270,7 +270,7 @@ For models compatible with Cambricon Extension for PyTorch (torch_mlu). Here's a
 
 1. Install the Cambricon CNToolkit by adhering to the platform-specific instructions on the [Installation](https://www.cambricon.com/docs/sdk_1.15.0/cntoolkit_3.7.2/cntoolkit_install_3.7.2/index.html)
 2. Next, install the PyTorch(torch_mlu) following the instructions on the [Installation](https://www.cambricon.com/docs/sdk_1.15.0/cambricon_pytorch_1.17.0/user_guide_1.9/index.html)
-3. Launch ComfyUI by running `python main.py`
+3. Launch Hanzo Studio by running `python main.py`
 
 # Running
 
@@ -286,7 +286,7 @@ For AMD 7600 and maybe other RDNA3 cards: ```HSA_OVERRIDE_GFX_VERSION=11.0.0 pyt
 
 ### AMD ROCm Tips
 
-You can enable experimental memory efficient attention on pytorch 2.5 in ComfyUI on RDNA3 and potentially other AMD GPUs using this command:
+You can enable experimental memory efficient attention on pytorch 2.5 in Hanzo Studio on RDNA3 and potentially other AMD GPUs using this command:
 
 ```TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1 python main.py --use-pytorch-cross-attention```
 
@@ -315,7 +315,7 @@ To use a textual inversion concepts/embeddings in a text prompt put them in the 
 
 Use ```--preview-method auto``` to enable previews.
 
-The default installation includes a fast latent preview method that's low-resolution. To enable higher-quality previews with [TAESD](https://github.com/madebyollin/taesd), download the [taesd_decoder.pth, taesdxl_decoder.pth, taesd3_decoder.pth and taef1_decoder.pth](https://github.com/madebyollin/taesd/) and place them in the `models/vae_approx` folder. Once they're installed, restart ComfyUI and launch it with `--preview-method taesd` to enable high-quality previews.
+The default installation includes a fast latent preview method that's low-resolution. To enable higher-quality previews with [TAESD](https://github.com/madebyollin/taesd), download the [taesd_decoder.pth, taesdxl_decoder.pth, taesd3_decoder.pth and taef1_decoder.pth](https://github.com/madebyollin/taesd/) and place them in the `models/vae_approx` folder. Once they're installed, restart Hanzo Studio and launch it with `--preview-method taesd` to enable high-quality previews.
 
 ## How to use TLS/SSL?
 Generate a self-signed certificate (not appropriate for shared/production use) and key by running the command: `openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 3650 -nodes -subj "/C=XX/ST=StateName/L=CityName/O=CompanyName/OU=CompanySectionName/CN=CommonNameOrHostname"`
@@ -327,39 +327,39 @@ Use `--tls-keyfile key.pem --tls-certfile cert.pem` to enable TLS/SSL, the app w
 
 ## Support and dev channel
 
-[Discord](https://comfy.org/discord): Try the #help or #feedback channels.
+[Discord](https://hanzo.ai/discord): Try the #help or #feedback channels.
 
-[Matrix space: #comfyui_space:matrix.org](https://app.element.io/#/room/%23comfyui_space%3Amatrix.org) (it's like discord but open source).
+[Matrix space: #hanzo_studio_space:matrix.org](https://app.element.io/#/room/%23hanzo_studio_space%3Amatrix.org) (it's like discord but open source).
 
-See also: [https://www.comfy.org/](https://www.comfy.org/)
+See also: [https://hanzo.ai/](https://hanzo.ai/)
 
 ## Frontend Development
 
-As of August 15, 2024, we have transitioned to a new frontend, which is now hosted in a separate repository: [ComfyUI Frontend](https://github.com/Comfy-Org/ComfyUI_frontend). This repository now hosts the compiled JS (from TS/Vue) under the `web/` directory.
+As of August 15, 2024, we have transitioned to a new frontend, which is now hosted in a separate repository: [Hanzo Frontend](https://github.com/hanzoui/studio_frontend). This repository now hosts the compiled JS (from TS/Vue) under the `web/` directory.
 
 ### Reporting Issues and Requesting Features
 
-For any bugs, issues, or feature requests related to the frontend, please use the [ComfyUI Frontend repository](https://github.com/Comfy-Org/ComfyUI_frontend). This will help us manage and address frontend-specific concerns more efficiently.
+For any bugs, issues, or feature requests related to the frontend, please use the [Hanzo Frontend repository](https://github.com/hanzoui/studio_frontend). This will help us manage and address frontend-specific concerns more efficiently.
 
 ### Using the Latest Frontend
 
-The new frontend is now the default for ComfyUI. However, please note:
+The new frontend is now the default for Hanzo Studio. However, please note:
 
-1. The frontend in the main ComfyUI repository is updated fortnightly.
+1. The frontend in the main Hanzo Studio repository is updated fortnightly.
 2. Daily releases are available in the separate frontend repository.
 
 To use the most up-to-date frontend version:
 
-1. For the latest daily release, launch ComfyUI with this command line argument:
+1. For the latest daily release, launch Hanzo Studio with this command line argument:
 
    ```
-   --front-end-version Comfy-Org/ComfyUI_frontend@latest
+   --front-end-version hanzoui/studio_frontend@latest
    ```
 
 2. For a specific version, replace `latest` with the desired version number:
 
    ```
-   --front-end-version Comfy-Org/ComfyUI_frontend@1.2.2
+   --front-end-version hanzoui/studio_frontend@1.2.2
    ```
 
 This approach allows you to easily switch between the stable fortnightly release and the cutting-edge daily updates, or even specific versions for testing purposes.
@@ -369,13 +369,13 @@ This approach allows you to easily switch between the stable fortnightly release
 If you need to use the legacy frontend for any reason, you can access it using the following command line argument:
 
 ```
---front-end-version Comfy-Org/ComfyUI_legacy_frontend@latest
+--front-end-version hanzoui/studio_legacy_frontend@latest
 ```
 
-This will use a snapshot of the legacy frontend preserved in the [ComfyUI Legacy Frontend repository](https://github.com/Comfy-Org/ComfyUI_legacy_frontend).
+This will use a snapshot of the legacy frontend preserved in the [Hanzo Studio Legacy Frontend repository](https://github.com/hanzoui/studio_legacy_frontend).
 
 # QA
 
 ### Which GPU should I buy for this?
 
-[See this page for some recommendations](https://github.com/comfyanonymous/ComfyUI/wiki/Which-GPU-should-I-buy-for-ComfyUI)
+[See this page for some recommendations](https://github.com/hanzoai/studio/wiki/Which-GPU-should-I-buy-for-Hanzo Studio)

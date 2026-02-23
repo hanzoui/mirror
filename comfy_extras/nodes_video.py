@@ -19,7 +19,7 @@ class SaveWEBM:
     def INPUT_TYPES(s):
         return {"required":
                     {"images": ("IMAGE", ),
-                     "filename_prefix": ("STRING", {"default": "ComfyUI"}),
+                     "filename_prefix": ("STRING", {"default": "Hanzo Studio"}),
                      "codec": (["vp9", "av1"],),
                      "fps": ("FLOAT", {"default": 24.0, "min": 0.01, "max": 1000.0, "step": 0.01}),
                      "crf": ("FLOAT", {"default": 32.0, "min": 0, "max": 63.0, "step": 1, "tooltip": "Higher crf means lower quality with a smaller file size, lower crf means higher quality higher filesize."}),

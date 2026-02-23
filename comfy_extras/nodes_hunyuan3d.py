@@ -488,7 +488,7 @@ def save_glb(vertices, faces, filepath, metadata=None):
     indices_byte_offset = len(vertices_buffer_padded)
 
     gltf = {
-        "asset": {"version": "2.0", "generator": "ComfyUI"},
+        "asset": {"version": "2.0", "generator": "Hanzo Studio"},
         "buffers": [
             {
                 "byteLength": len(buffer_data)
@@ -589,7 +589,7 @@ class SaveGLB:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": {"mesh": ("MESH", ),
-                             "filename_prefix": ("STRING", {"default": "mesh/ComfyUI"}), },
+                             "filename_prefix": ("STRING", {"default": "mesh/Hanzo Studio"}), },
                 "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"}, }
 
     RETURN_TYPES = ()

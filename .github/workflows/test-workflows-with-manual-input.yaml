@@ -1,4 +1,4 @@
-name: Test ComfyUI Workflows Manual
+name: Test Hanzo Studio Workflows Manual
 on:
   workflow_dispatch:
     inputs:
@@ -54,8 +54,8 @@ on:
         required: false
         default: '2.3.1'
         type: string
-      comfyui_flags:
-        description: 'ComfyUI Flags'
+      hanzo_studio_flags:
+        description: 'Hanzo Studio Flags'
         required: false
         default: '--force-fp16'
         type: string

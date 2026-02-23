@@ -91,7 +91,7 @@ class VAEDecodeAudio:
 
 
 def create_vorbis_comment_block(comment_dict, last_block):
-    vendor_string = b'ComfyUI'
+    vendor_string = b'Hanzo Studio'
     vendor_length = len(vendor_string)
 
     comments = []
@@ -153,7 +153,7 @@ class SaveAudio:
     @classmethod
     def INPUT_TYPES(s):
         return {"required": { "audio": ("AUDIO", ),
-                              "filename_prefix": ("STRING", {"default": "audio/ComfyUI"})},
+                              "filename_prefix": ("STRING", {"default": "audio/Hanzo Studio"})},
                 "hidden": {"prompt": "PROMPT", "extra_pnginfo": "EXTRA_PNGINFO"},
                 }
 
@@ -164,7 +164,7 @@ class SaveAudio:
 
     CATEGORY = "audio"
 
-    def save_audio(self, audio, filename_prefix="ComfyUI", prompt=None, extra_pnginfo=None):
+    def save_audio(self, audio, filename_prefix="Hanzo Studio", prompt=None, extra_pnginfo=None):
         filename_prefix += self.prefix_append
         full_output_folder, filename, counter, subfolder, filename_prefix = folder_paths.get_save_image_path(filename_prefix, self.output_dir)
         results: list[FileLocator] = []

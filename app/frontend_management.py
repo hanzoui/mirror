@@ -33,7 +33,7 @@ def frontend_install_warning_message():
 Please install the updated requirements.txt file by running:
 {sys.executable} {extra}-m pip install -r {req_path}
 
-This error is happening because the ComfyUI frontend is no longer shipped as part of the main repo but as a pip package instead.
+This error is happening because the Hanzo Studio frontend is no longer shipped as part of the main repo but as a pip package instead.
 
 If you are on the portable package you can run: update\\update_comfyui.bat to solve this problem
 """.strip()
@@ -46,7 +46,7 @@ def check_frontend_version():
         return tuple(map(int, version.split(".")))
 
     try:
-        frontend_version_str = version("comfyui-frontend-package")
+        frontend_version_str = version("hanzo-studio-frontend-package")
         frontend_version = parse_version(frontend_version_str)
         with open(req_path, "r", encoding="utf-8") as f:
             required_frontend = parse_version(f.readline().split("=")[-1])
@@ -63,7 +63,7 @@ ________________________________________________________________________
 """.strip()
             )
         else:
-            logging.info("ComfyUI frontend version: {}".format(frontend_version_str))
+            logging.info("Hanzo Studio frontend version: {}".format(frontend_version_str))
     except Exception as e:
         logging.error(f"Failed to check frontend version: {e}")
 
@@ -167,15 +167,15 @@ class FrontendManager:
     @classmethod
     def default_frontend_path(cls) -> str:
         try:
-            import comfyui_frontend_package
+            import hanzo_studio_frontend_package
 
-            return str(importlib.resources.files(comfyui_frontend_package) / "static")
+            return str(importlib.resources.files(hanzo_studio_frontend_package) / "static")
         except ImportError:
             logging.error(
                 f"""
 ********** ERROR ***********
 
-comfyui-frontend-package is not installed.
+hanzo-studio-frontend-package is not installed.
 
 {frontend_install_warning_message()}
 
@@ -187,17 +187,17 @@ comfyui-frontend-package is not installed.
     @classmethod
     def templates_path(cls) -> str:
         try:
-            import comfyui_workflow_templates
+            import hanzo_studio_workflow_templates
 
             return str(
-                importlib.resources.files(comfyui_workflow_templates) / "templates"
+                importlib.resources.files(hanzo_studio_workflow_templates) / "templates"
             )
         except ImportError:
             logging.error(
                 f"""
 ********** ERROR ***********
 
-comfyui-workflow-templates is not installed.
+hanzo-studio-workflow-templates is not installed.
 
 {frontend_install_warning_message()}
 

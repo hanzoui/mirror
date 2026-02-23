@@ -366,7 +366,7 @@ class ThresholdMask:
         return (mask,)
 
 # Mask Preview - original implement from
-# https://github.com/cubiq/ComfyUI_essentials/blob/9d9f4bedfc9f0321c19faf71855e228c93bd0dc9/mask.py#L81
+# https://github.com/cubiq/Hanzo Studio_essentials/blob/9d9f4bedfc9f0321c19faf71855e228c93bd0dc9/mask.py#L81
 # upstream requested in https://github.com/Kosinkadink/rfcs/blob/main/rfcs/0000-corenodes.md#preview-nodes
 class MaskPreview(nodes.SaveImage):
     def __init__(self):
@@ -385,7 +385,7 @@ class MaskPreview(nodes.SaveImage):
     FUNCTION = "execute"
     CATEGORY = "mask"
 
-    def execute(self, mask, filename_prefix="ComfyUI", prompt=None, extra_pnginfo=None):
+    def execute(self, mask, filename_prefix="Hanzo Studio", prompt=None, extra_pnginfo=None):
         preview = mask.reshape((-1, 1, mask.shape[-2], mask.shape[-1])).movedim(1, -1).expand(-1, -1, -1, 3)
         return self.save_images(preview, filename_prefix, prompt, extra_pnginfo)
 
